@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+html, body {
+  background-color: #d6c0b0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@mixin small-display{
+  @media (max-width: 420px){
+    @content;
+  }
+}
+
+@mixin middle-display{
+  @media (max-width: 800px){
+    @content;
+  }
+}
+
+@mixin big-display{
+  @media (min-width: 820px) {
+    @content;
+  }
+}
+
+@mixin very-big-display{
+  @media (min-width: 1900px) {
+    @content;
+  }
+}

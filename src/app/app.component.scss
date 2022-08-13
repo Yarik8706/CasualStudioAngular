@@ -1,0 +1,278 @@
+@import "../styles";
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.left-navbar {
+  display: block;
+  position: fixed;
+  width: 88px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #3A3845;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+}
+
+.left-navbar-container {
+  padding-top: 30%;
+  width: auto;
+  height: 50%;
+  position: relative;
+}
+
+.left-navbar-container:first-of-type{
+  padding-top: calc(20% + 90px);
+}
+
+.left-navbar-text {
+  text-align: center;
+  color: white;
+  font-family: "Roboto Light", sans-serif;
+  word-break: break-all;
+  letter-spacing: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 105.52%;
+  text-transform: uppercase;
+}
+
+.navbar {
+  padding: 0 88px;
+  position: fixed;
+  width: 100%;
+  height: 81px;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  background: #3A3845;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-item {
+  margin: auto 1%;
+  height: 60px;
+  width: 100%;
+  max-width: 30%;
+}
+
+.navbar-top-container {
+  display: block;
+  width: 100%;
+  background-color: #8A766C;
+  height: 43px;
+}
+
+.navbar-bottom-container {
+  display: block;
+  width: 100%;
+  background-color: #706661;
+  height: 17px;
+}
+
+.navbar-center-title {
+  display: none;
+}
+
+.navbar-open-button {
+  display: none;
+}
+
+.menu-container {
+  padding-top: 100px;
+  margin-left: 100px;
+}
+
+.col {
+  display: block;
+  width: 50%;
+}
+
+.col-40 {
+  width: 25%;
+  height: 100%;
+}
+
+.row {
+  display: flex;;
+}
+
+.col-60 {
+  width: 70%;
+  height: 100%;
+}
+
+.information-container {
+  margin-top: 100px;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.information-inner {
+  margin: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  background-color: #b4afab;
+}
+
+.information-text {
+  display: block;
+  border-radius: 16px;
+  height: 70%;
+  padding: 20px 40px 20px 20px;
+  background-color: #f7ccac;
+  vertical-align: top;
+  font-family: "Roboto Light", sans-serif;
+}
+
+.delete-button-decoration{
+  background: none;
+  border: none;
+}
+
+.close-button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.information-social{
+ a{
+   color: black;
+   text-decoration: none;
+ }
+  display: block;
+  height: 15%;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #f7ccac;
+  text-transform: uppercase;
+}
+
+.button-icon {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  background-color: #d8a989;
+  border-radius: 16px;
+}
+
+.button-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 420px) {
+  .left-navbar {
+    display: none;
+  }
+
+  .navbar-center-title {
+    display: block;
+  }
+
+  .navbar-open-button {
+    display: block;
+  }
+  .navbar {
+    padding: 0 !important;
+    margin: 0;
+    width: 100%;
+  }
+  .inner-list {
+    margin-left: 20px;
+  }
+  .col-40, .col, .col-60 {
+    display: block;
+    width: 100%;
+  }
+  .navbar-item {
+    display: none;
+  }
+  .navbar-center-title{
+    text-transform: uppercase;
+    color: white;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 30px;
+    margin: auto;
+  }
+  .close-container {
+    display: none;
+    position: fixed !important;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: white;
+  }
+  .information-container {
+    position: relative;
+    background-color: #d2beaf;
+    border-radius: 16px;
+    padding: 30px;
+    height: 90% !important;
+    width: 90% !important;
+    margin: 40px auto !important;
+  }
+  .close-button {
+    display: block;
+  }
+  .menu-container {
+    margin: 0;
+  }
+}
+
+@include middle-display{
+  .navbar {
+    padding-right: 30px;
+  }
+  .navbar-item:first-of-type{
+    display: none;
+  }
+  .col-40, .col, .col-60 {
+    display: block;
+    width: 100%;
+  }
+  .information-container {
+    width: auto;
+    margin-top: 20px;
+  }
+  .close-container{
+    position: static;
+  }
+  .product-text-container {
+    margin: 10px;
+  }
+}
+
+@include big-display{
+  .close-container{
+    width: 30%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+  }
+}
+
+@include very-big-display{
+  .information-container {
+    font-size: 40px;
+  }
+  .product-image-container{
+    border-radius: 32px;
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../styles";
+
+.product-item {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 14.5vh;
+  margin-bottom: 20px;
+}
+
+.product-image-container {
+  display: block;
+  padding-right: 10px;
+  border-radius: 16px;
+  background: #ABA8A8;
+}
+
+.product-text-container {
+  display: flex;
+  width: 40%;
+  margin: 0 20px;
+  height: 5vh;
+  box-sizing: border-box;
+  border-radius: 32px;
+  background-color: #c4c4c4;
+}
+
+.product-image {
+  height: 14.5vh;
+  width: 14.5vh;
+}
+
+.product-text {
+  margin: auto 20px;
+  font-size: 20px;
+  font-family: "Roboto Light", sans-serif;
+  font-weight: bold;
+}
+
+@include very-big-display{
+  .product-text {
+    font-size: 40px;
+  }
+}
+
+@include middle-display{
+  .product-text-container {
+    width: 80%;
+  }
+}

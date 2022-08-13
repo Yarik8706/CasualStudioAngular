@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "casualstudio-20a01": {
+      "hosting": {
+        "CasualStudioAngular": [
+          "casualstudio-20a01"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "casualstudio-20a01"
+  }
+}
