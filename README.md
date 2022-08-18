@@ -1,7 +1,7 @@
 # Casual Studio
 
 Sait for Casual Studio Corporation. <br>
-[You can view the site at this link.](casualstudio.ru) <br>
+[You can view the site at this link.](https://casualstudio.ru) <br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
 
 ## Development server
